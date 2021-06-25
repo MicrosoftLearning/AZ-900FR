@@ -1,20 +1,20 @@
 ---
 wts:
-    title: '06 - Créer une base de données SQL (5 min)'
-    module: 'Module 02 - Principaux services Azure (charges de travail)'
+    title: '06 - Créer une base de données SQL (5 minutes)'
+    module: 'Module 02 - Principaux services Azure (charges de travail)'
 ---
 
 # 06 - Créer une base de données SQL
 
 Dans cette procédure pas à pas, nous allons créer une base de données SQL dans Azure, puis interroger les données de cette base de données.
 
-# Tâche 1 : Créer la base de données (5 min)
+# Tâche 1 : Créer la base de données (5 minutes)
 
 Dans cette tâche, vous allez créer une base de données SQL basée sur l'échantillon AdventureWorksLT. 
 
 1. Connectez-vous au Portail Azure à l'adresse [**https://portal.azure.com**](https://portal.azure.com).
 
-2. Dans le panneau **Tous les services**, recherchez et sélectionnez **Bases de données SQL**, puis cliquez sur **Ajouter**. 
+2. Dans le panneau **Tous les services**, recherchez et sélectionnez **Bases de données SQL**, puis cliquez sur **+ Ajouter, + Créer ou + Nouveau**. 
 
 3. Sous l’onglet **Base**, remplissez ces informations.  
 
@@ -32,11 +32,11 @@ Dans cette tâche, vous allez créer une base de données SQL basée sur l'écha
     | Nom du serveur | **sqlserverxxxx** (doit être unique) | 
     | Connexion de l’administrateur du serveur | **sqluser** |
     | Mot de passe | **Pa$$w0rd1234** |
-    | Emplacement | **(États-Unis) USA Est** |
+    | Localisation | **(États-Unis) USA Est** |
     | Autoriser les services Azure à accéder au serveur| ***Activez la case à cocher*** |
     | | |
 
-   ![Capture d’écran du volet Serveur et du volet Nouveau serveur avec les champs remplis conformément au tableau, le  bouton Examiner et créer et le bouton OK activés.](../images/0501.png)
+   ![Capture d’écran du volet Serveur et du volet Nouveau serveur avec les champs remplis conformément au tableau, le bouton Examiner et créer et le bouton OK activés.](../images/0501.png)
 
 4. Accédez à l'onglet **Mise en réseau** et configurez les paramètres suivants (conserver les valeurs par défaut pour tous les autres éléments) 
 
@@ -55,12 +55,12 @@ Dans cette tâche, vous allez créer une base de données SQL basée sur l'écha
     | --- | --- |
     | Utiliser les données existantes | **Exemple** |
     | Classement | ***utilisation par défaut*** |
-    | Activer Advanced Data Security | **Pas maintenant** |
+    | Activer Azure Defender pour SQL | **Pas maintenant** |
     | | |
 
     ![Capture d’écran de l’onglet Paramètres supplémentaires du panneau Créer une base de données SQL avec les paramètres sélectionnés conformément au tableau et le bouton Examiner et créer mis en surbrillance.](../images/0501c.png)
 
-6. Cliquez sur **Examiner et créer** puis cliquez sur **Créer** pour déployer et approvisionner le groupe de ressources, le serveur et la base de données. Le déploiement peut prendre jusqu'à 5 minutes.
+6. Cliquez sur **Examiner et créer** puis cliquez sur **Créer** pour déployer et approvisionner le groupe de ressources, le serveur et la base de données. Le déploiement peut prendre entre 2 et 5 minutes.
 
 7. Sélectionnez l’onglet Ressources pour localiser la base de données SQL que vous avez créée. Il se peut qu’une actualisation soit requise.
 

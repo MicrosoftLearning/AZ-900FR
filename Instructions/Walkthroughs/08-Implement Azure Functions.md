@@ -1,19 +1,19 @@
 ---
 wts:
-    title: '08 - Implémenter des fonctions Azure (5 min)'
+    title: '08 - Implémenter Azure Functions (5 minutes)'
     module: 'Module 03 : Décrire les solutions principales et les outils de gestion'
 ---
-# 08 - Implémenter des fonctions Azure
+# 08 - Implémenter Azure Functions
 
 Dans cette procédure pas à pas, nous allons créer une application de fonction pour afficher un message Hello en cas de requête HTTP. 
 
-# Tâche 1 : Créer une application web (5 min)
+# Tâche 1 : Créer une application de fonction (5 minutes)
 
 Dans cette tâche, nous allons créer une application de fonction.
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
 
-1. Dans la zone de texte située en haut du portail **Rechercher des ressources, des services et des documents**, recherchez et sélectionnez **Application de fonction** puis, dans le panneau **Function App**, cliquez sur **Ajouter**.
+1. Dans la zone de texte située en haut du portail **Rechercher des ressources, des services et des documents**, recherchez et sélectionnez **Application de fonction** puis, dans le panneau **Application de fonction**, cliquez sur **+ Ajouter, + Créer ou + Nouveau**.
 
 1. Sous l’onglet **Bases** du panneau **Application de fonction**, spécifiez les paramètres suivants (remplacez **xxxx** dans le nom de la fonction par des lettres et des chiffres de façon à ce que le nom soit unique au monde et maintenez les valeurs par défaut de tous les autres paramètres) : 
 
@@ -23,7 +23,7 @@ Dans cette tâche, nous allons créer une application de fonction.
     | Groupe de ressources | le nom d’un nouveau groupe de ressources **myRGFunction** |
     | le nom de l’application de fonction | **fonction-xxxx** |
     | Publier | **Code** |
-    | Pile d’exécution | **NET Core** |
+    | Pile d’exécution | **NET** |
     | Version | **3.1** |
     | Région | **USA Est** |
     | | |
@@ -34,7 +34,7 @@ Dans cette tâche, nous allons créer une application de fonction.
 
 1. Attendez la notification indiquant que la ressource a bien été créée.
 
-1. Revenez au panneau **Application de fonction**, cliquez sur **Rafraîchir** et vérifiez que l’application de fonction nouvellement créée a le statut **En cours d’exécution**. 
+1. Revenez au panneau **Application de fonction**, cliquez sur **Actualiser** et vérifiez que l’application de fonction nouvellement créée a le statut **En cours d’exécution**. 
 
     ![Capture d’écran de la page Function App avec la nouvelle application de fonction.](../images/0701.png)
 
@@ -44,17 +44,11 @@ Dans cette tâche, nous allons utiliser la fonction Webhook + API pour afficher 
 
 1. Dans le panneau **Application de fonction**, cliquez sur l’application de fonction nouvellement créée. 
 
-1. Dans le panneau de l’application de fonction, dans la section **Fonctions**, cliquez sur **Fonctions** puis cliquez sur **+ Ajouter**.
+1. Sur le panneau de l’application de fonction, dans la section **Fonctions**, cliquez sur **Fonctions** puis cliquez sur **+ Ajouter**.
 
     ![Capture d’écran de l’étape de choix d’un environnement de développement dans les fonctions Azure pour le volet Mise en route de dot net dans le portail Azure. Les éléments d’affichage pour créer une nouvelle fonction dans le portail sont mis en surbrillance. Les éléments en surbrillance sont le développement de l’application de fonction, l’ajout d’une nouvelle fonction dans le portail et le bouton Continuer.](../images/0702.png)
 
-1. Sous l’onglet **Modèles** du panneau **Nouvelle fonction**, cliquez sur **Déclencheur HTTP**. 
-
-    ![Capture d’écran de l’étape de création d’une fonction dans les fonctions Azure pour le volet Mise en route de dot net dans le portail Azure. La fiche de déclenchement HTTP est en surbrillance pour illustrer les éléments d’affichage utilisés pour ajouter un nouveau webhook à une fonction Azure.](../images/0702a.png)
-
-1. Sous l’onglet **Détails** du panneau **Nouvelle fonction**, acceptez le nom par défaut de la **Nouvelle fonction** et le **Niveau d’autorisation**, puis cliquez sur **Créer une fonction**. 
-
-    ![Capture d’écran de l’étape de création d’une fonction dans les fonctions Azure pour le volet Mise en route de dot net dans le portail Azure. Le bouton Webhook + API et le bouton Créer sont en surbrillance pour illustrer les éléments d’affichage utilisés pour ajouter un nouveau webhook à une fonction Azure.](../images/0703.png)
+1. Dans la section **Sélectionner un modèle** de l’option **Ajouter une fonction**, cliquez sur **Déclencheur HTTP**, sous la section **Détails du modèle**, acceptez les paramètres par défaut, puis cliquez sur **Ajouter**.
 
 1. Dans le panneau **HttpTrigger1**, dans la section **Développeur**, cliquez sur **Code + Test**. 
 
@@ -74,7 +68,7 @@ Dans cette tâche, nous allons utiliser la fonction Webhook + API pour afficher 
 
 1. Ajoutez **&name=*yourname*** à la fin de l’URL.
 
-    **Remarque** : Remplacez ***yourname*** par votre prénom. Par exemple, si vous vous appelez Cindy, l’URL finale ressemblera à « https://azfuncxxx.azurewebsites.net/api/HttpTrigger1?code=X9xx9999xXXXXX9x9xxxXX==&name=cindy »
+    **Remarque** : Remplacez ***yourname*** par votre prénom. Par exemple, si vous vous appelez Cindy, l’URL finale ressemblera à `https://azfuncxxx.azurewebsites.net/api/HttpTrigger1?code=X9xx9999xXXXXX9x9xxxXX==&name=cindy`
 
     ![Capture d’écran d’une URL de fonction en surbrillance et d’un exemple de nom d’utilisateur ajouté dans la barre d’adresse d’un navigateur web. Le message de type Hello et le nom d’utilisateur sont également mis en surbrillance pour illustrer la sortie de la fonction dans la fenêtre principale du navigateur.](../images/0707.png)
 

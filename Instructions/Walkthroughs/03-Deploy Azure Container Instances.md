@@ -1,20 +1,20 @@
 ---
 wts:
-    title: '03 - Déployer Azure Container Instances (10 min)'
-    module: 'Module 02 - Principaux services Azure (charges de travail)'
+    title: '03 - Déployer Azure Container Instances (10 minutes)'
+    module: 'Module 02 : Principaux services Azure (charges de travail)'
 ---
 
 # 03 - Déployer Azure Container Instances
 
 Dans cette procédure pas à pas, nous allons créer, configurer et déployer un conteneur Docker à l’aide d’ACI (Azure Container Instances) dans le portail Azure. Le conteneur est une application web Welcome to ACI qui affiche une page HTML statique. 
 
-# Tâche 1 : Créer une instance de conteneur (10 min)
+# Tâche 1 : Créer une instance de conteneur (10 minutes)
 
 Dans cette tâche, nous allons créer une nouvelle instance de conteneur pour l’application web. 
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
 
-2. Dans le panneau **Tous les services**, recherchez et sélectionnez **Instances de conteneur** puis cliquez sur **+ Ajouter**. 
+2. Dans le panneau **Tous les services**, recherchez et sélectionnez **Container Instances** puis cliquez sur **+ Ajouter, + Créer ou + Nouveau**. 
 
 3. Fournissez les détails de base suivants pour la nouvelle instance de conteneur (laissez les valeurs par défaut pour tous les autres éléments) : 
 
@@ -38,7 +38,7 @@ Dans cette tâche, nous allons créer une nouvelle instance de conteneur pour l�
 	| Étiquette du nom DNS| **mycontainerdnsxxxx** |
 	|||
 	
-	**Remarque** : Votre conteneur sera accessible au public à l’adresse : dns-name-label.region.azurecontainer.io. Si vous recevez le message d’erreur **Nom DNS non disponible** à la fin du déploiement, spécifiez un autre nom DNS (différent de xxxx) et procédez à un nouveau déploiement.. 
+	**Remarque** : Votre conteneur sera accessible au public à l’adresse : dns-name-label.region.azurecontainer.io. Si vous recevez le message d’erreur **Nom DNS non disponible** à la fin du déploiement, spécifiez un autre nom DNS (différent de xxxx) et procédez à un nouveau déploiement. 
 
 
 	![Capture d’écran du volet de configuration du panneau Créer des instances de conteneur, dans le portail Azure, avec l’étiquette de nom DNS. ](../images/0201.png)

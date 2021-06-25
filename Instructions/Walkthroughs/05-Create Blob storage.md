@@ -1,19 +1,19 @@
 ---
 wts:
-    title: '05 - Créer un stockage d’objets blob (5 min)'
-    module: 'Module 02 - Principaux services Azure (charges de travail)'
+    title: '05 - Créer un stockage d’objets Blob (5 minutes)'
+    module: 'Module 02 - Principaux services Azure (charges de travail)'
 ---
-# 05 - Créer un stockage d’objets blob
+# 05 - Créer un stockage d’objets Blob
 
-Dans cette procédure pas à pas, nous allons créer un compte de stockage, puis travailler avec des fichiers de stockage d’objets blob.
+Dans cette procédure pas à pas, nous allons créer un compte de stockage, puis travailler avec des fichiers de stockage d’objets Blob.
 
-# Tâche 1 : Créer un compte de stockage (5 min)
+# Tâche 1 : Créer un compte de stockage (5 minutes)
 
 Dans cette tâche, vous allez créer un nouveau compte de stockage. 
 
 1. Connectez-vous au Portail Azure à l’adresse <a href="https://portal.azure.com" target="_blank"><span style="color: #0066cc;" color="#0066cc">https://portal.azure.com</span></a>
 
-2. Dans le panneau **Tous les services**, recherchez et sélectionnez **Comptes de stockage**, puis cliquez sur **Ajouter**. 
+2. Dans le panneau **Tous les services**, recherchez et sélectionnez **Comptes de stockage**, puis cliquez sur **+ Ajouter, + Créer ou + Nouveau**. 
 
 3. Sous l’onglet **Informations de base** du panneau **Créer un compte de stockage**, remplissez les informations suivantes (remplacez **xxxx** dans le nom du compte de stockage par des lettres et des chiffres de sorte que le nom soit unique au monde). Laissez les valeurs par défaut pour tous les autres éléments.
 
@@ -22,7 +22,7 @@ Dans cette tâche, vous allez créer un nouveau compte de stockage.
     | Abonnement | **Choisir votre abonnement** |
     | Groupe de ressources | **myRGStorage** (créer un nouveau) |
     | Nom du compte de stockage | **storageaccountxxxx** |
-    | Emplacement | **(États-Unis) USA Est**  |
+    | Localisation | **(États-Unis) USA Est**  |
     | Performances | **Standard** |
     | Type de compte | **StorageV2 (usage général v2)** |
     | Réplication | **Stockage localement redondant** |
@@ -44,7 +44,7 @@ Dans cette tâche, nous allons créer un conteneur blob et charger un fichier d�
 
 1. Cliquez sur le nom du nouveau compte de stockage, défilez jusqu’à la section **Service BLOB**, puis cliquez sur **Conteneurs**.
 
-2. Cliquez sur **Conteneur** et complétez les informations. Utilisez les icônes Information pour en savoir plus. Lorsque vous avez terminé, cliquez sur **OK**.
+2. Cliquez sur **+ Conteneur** et complétez les informations. Utilisez les icônes Information pour en savoir plus. Une fois que vous avez terminé, cliquez sur **Créer**.
 
 
     | Paramètre | Valeur |
@@ -59,7 +59,7 @@ Dans cette tâche, nous allons créer un conteneur blob et charger un fichier d�
 
 5. Accédez à un fichier sur votre ordinateur local. 
 
-    **Remarque** : Vous pouvez créer un fichier vide « .txt » ou utiliser n’importe quel fichier existant. Pensez à choisir un fichier de petite taille pour réduire le temps de chargement.
+    **Remarque** : Vous pouvez créer un fichier vide `.txt` ou utiliser n’importe quel fichier existant. Pensez à choisir un fichier de petite taille pour réduire le temps de chargement.
 
 6. Cliquez sur la flèche **Avancée**, laissez les valeurs par défaut mais passez en revue les options disponibles, puis cliquez sur **Charger**.
 

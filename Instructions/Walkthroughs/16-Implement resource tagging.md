@@ -1,13 +1,13 @@
 ---
 wts:
-    title: '16 - Implémenter le balisage des ressources (5 min)'
-    module: 'Module 05 : Description des fonctions d’identité, de gouvernance, de confidentialité et de conformité'
+    title: '16 - Implémenter le balisage des ressources (5 minutes)'
+    module: 'Module 05 : Description des fonctionnalités d’identité, de gouvernance, de confidentialité et de conformité'
 ---
 # 16 - Implémenter le balisage des ressources
 
 Au cours de cette procédure pas à pas, nous allons créer une affectation de stratégie qui exige un balisage, créer un compte de stockage et tester le balisage, afficher les ressources avec une balise spécifique et supprimer la stratégie de balisage.
 
-# Tâche 1 : Créer une affectation de stratégie (5 min)
+# Tâche 1 : Créer une affectation de stratégie (5 minutes)
 
 Au cours de cette tâche, nous allons configurer la stratégie **Exiger une balise pour les ressources** et l’assigner à notre abonnement. 
 
@@ -19,13 +19,13 @@ Au cours de cette tâche, nous allons configurer la stratégie **Exiger une bali
 
 4. Notez que la **Portée** de notre stratégie sera valable au niveau de l’abonnement. 
 
-5. Sélectionnez le bouton affichant des points de suspension en regard de la zone **Définition de la stratégie** (fin de la zone de texte à droite). **Recherchez** les définitions de stratégie, y compris la **balise** de valeur, dans le jeu de résultats. Cliquez sur la définition **Exiger une balise pour les ressources**, puis sur **Sélectionner**.
+5. Sous **Informations de base**, sélectionnez les points de suspension affichés en regard de la zone **Définition de la stratégie** (côté droit de la zone de texte). Dans la zone de **Recherche**, entrez la valeur **balise**. Une liste des stratégies associées au mot **balise** s’affiche. Faites défiler jusqu’à ce que vous trouviez la définition **Exiger une balise pour les ressources**, cliquez dessus puis cliquez sur **Sélectionner**.
 
    ![Capture d’écran du volet Définitions disponibles avec l’option Exiger une balise pour les ressources activée.](../images/1701.png)
 
-6. Dans le panneau **Attribuer une stratégie**, sous l’onglet **Paramètres**, tapez **Entreprise** comme nom de balise. Cliquez sur **Examiner et créer**, puis sur **Créer**.
+6. Sous l’onglet **Paramètres**, saisissez **Société** comme nom de balise et **Contoso** comme valeur. Cliquez sur **Examiner et créer**, puis sur **Créer**.
 
-    **Remarque :** Ceci est un exemple simple de démonstration du balisage. 
+    **Remarque :** Ceci est un exemple simple de démonstration du balisage. Veuillez noter que l’entrée en vigueur de l’affectation peut prendre environ 30 minutes. 
 
     ![Capture d’écran du volet Attribuer une stratégie avec le nom de la balise renseigné.](../images/1702.png)
 
@@ -37,16 +37,16 @@ Au cours de cette tâche, nous allons configurer la stratégie **Exiger une bali
 
 Au cours de cette tâche, nous allons créer des comptes de stockage pour tester le balisage requis. 
 
-1. Dans le portail Azure, dans le panneau **Tous les services**, recherchez et sélectionnez **Comptes de stockage**, puis cliquez sur **+ Ajouter**.
+1. Dans le portail Azure, dans le panneau **Tous les services**, recherchez et sélectionnez **Comptes de stockage**, puis cliquez sur **+ Ajouter, + Créer ou + Nouveau**.
 
 2. Sous l’onglet **Informations de base** du panneau **Créer un compte de stockage**, remplissez les informations suivantes (remplacez **xxxx** dans le nom du compte de stockage par des lettres et des chiffres de sorte que le nom soit unique au monde). Laissez les valeurs par défaut pour tous les autres éléments.
 
     | Paramètre | Valeur | 
     | --- | --- |
     | Abonnement | **Utilisez votre abonnement** |
-    | Groupe de ressources | **myRGTags** (nouveau) |
+    | Groupe de ressources | **myRGTags**  |
     | Nom du compte de stockage | **storageaccountxxxx** |
-    | Emplacement | **(États-Unis) USA Est** |
+    | Localisation | **(États-Unis) USA Est** |
     | | |
 
 3. Cliquez sur **Examiner et créer**. 
@@ -75,7 +75,7 @@ Au cours de cette tâche, nous allons créer des comptes de stockage pour tester
 
 1. Dans le portail Azure, dans le panneau **Tous les services**, recherchez et sélectionnez **Balises**.
 
-2. Notez toutes les balises et leurs valeurs. Cliquez sur la paire clé-valeur **Entreprise :** Paire clé-valeur **Contoso**. Un panneau présentant le compte de stockage nouvellement créé s’affiche, à condition que vous ayez inclus la balise lors de son déploiement. 
+2. Notez toutes les balises et leurs valeurs. Cliquez sur la paire clé-valeur **Entreprise : **Paire clé-valeur **Contoso**. Un panneau présentant le compte de stockage nouvellement créé s’affiche, à condition que vous ayez inclus la balise lors de son déploiement. 
 
    ![Capture d’écran des balises avec les options Entreprise et Contoso sélectionnées.](../images/1705.png)
 

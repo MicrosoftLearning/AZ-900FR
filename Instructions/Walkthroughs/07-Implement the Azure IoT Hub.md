@@ -1,19 +1,19 @@
 ---
 wts:
-    title: '07 - Implémenter un hub IoT Azure (10 min)'
+    title: '07 - Implémenter Azure IoT Hub (10 minutes)'
     module: 'Module 03 : Décrire les solutions principales et les outils de gestion'
 ---
-# 07 - Implémenter un hub IoT Azure
+# 07 - Implémenter Azure IoT Hub
 
 Dans cette procédure pas à pas, nous allons configurer un nouveau hub IoT Azure dans le portail Azure, puis authentifier une connexion à un appareil IoT à l’aide du simulateur d’appareil Raspberry Pi en ligne. Les données et les messages des capteurs sont transmis du simulateur Raspberry Pi à votre hub IoT Azure. Vous pouvez afficher des mesures pour l’activité de messagerie dans le portail Azure.
 
-# Tâche 1 : Créer une ressource IoT Hub (10 min)
+# Tâche 1 : Créer une ressource IoT Hub (10 minutes)
 
 Dans cette tâche, nous allons créer un hub IoT. 
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
 
-2. Dans le panneau **Tous les services**, recherchez et sélectionnez **hub IoT** puis cliquez sur **+ Ajouter**.
+2. Dans le panneau **Tous les services**, recherchez et sélectionnez **Comptes de stockage**, puis cliquez sur **+ Ajouter, + Créer ou + Nouveau**.
 
 3. Sous l’onglet **Général** du panneau **Hub IoT**, remplissez les champs avec les détails suivants (remplacez **xxxx** dans le nom du compte de stockage par des lettres et des chiffres, de façon à ce que le nom soit unique au monde) :
 
@@ -61,7 +61,7 @@ Dans cette tâche, nous allons tester notre appareil à l’aide du simulateur R
 
 1. Ouvrez un nouvel onglet dans le navigateur web et accédez au [simulateur Raspberry Pi en ligne](https://azure-samples.github.io/raspberry-pi-web-simulator/#Getstarted). 
 
-2. Découvrez le simulateur Raspberry Pi. Si une fenêtre contextuelle d’aperçu s’affiche, cliquez sur « **X** » pour fermer la fenêtre.
+2. Découvrez le simulateur Raspberry Pi. Si une fenêtre contextuelle d’aperçu s’affiche, cliquez sur "**X**" pour fermer la fenêtre.
 
 3. Dans la zone de code, à droite, recherchez la ligne contenant 'const connectionString ='. Remplacez ce code par la chaîne de connexion que vous avez copiée à partir du portail Azure. Notez que la chaîne de connexion comprend les entrées DeviceId (**myRaspberryPi**) et SharedAccessKey.
 

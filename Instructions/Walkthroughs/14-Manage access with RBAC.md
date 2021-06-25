@@ -1,19 +1,19 @@
 ---
 wts:
-    title: '14 - Gérer l’accès avec RBAC (5 min)'
-    module: 'Module 05 : Description des fonctions d’identité, de gouvernance, de confidentialité et de conformité'
+    title: '14 - Gérer l’accès avec RBAC (5 minutes)'
+    module: 'Module 05: Description des fonctionnalités d’identité, de gouvernance, de confidentialité et de conformité'
 ---
 # 14 - Gérer l’accès avec RBAC
 
 Dans cette procédure pas à pas, nous allons attribuer des rôles et afficher des journaux d’activité. 
 
-# Tâche 1 : Afficher et attribuer des rôles (5 min)
+# Tâche 1 : Afficher et attribuer des rôles (5 minutes)
 
 Dans cette tâche, nous allons attribuer le rôle de contributeur de machine virtuelle. 
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
 
-2. Dans le panneau **Tous les services**, recherchez et sélectionnez **Groupes de ressources**, puis cliquez sur **+ Ajouter**.
+2. Dans le panneau **Tous les services**, recherchez et sélectionnez **Groupes de ressources**, puis sélectionnez **+ Ajouter, + Créer ou + Nouveau**.
 
 3. Créez un nouveau groupe de ressources. Lorsque vous avez terminé, cliquez sur **Créer**. 
 
@@ -32,7 +32,7 @@ Dans cette tâche, nous allons attribuer le rôle de contributeur de machine vir
 
     ![Capture d’écran du panneau des rôles IAM. Les rôles de propriétaire, de contributeur et de lecteur sont affichés.](../images/1501.png)
 
-7. Sous l’onglet **Attributions de rôle** du panneau **myRGRBAC - Contrôle d'accès (IAM)**, cliquez sur **+ Ajouter** puis cliquez sur **Ajouter une attribution de rôle**. Attribuez le rôle Contributeur de machine virtuelle à votre compte d’utilisateur, puis cliquez sur **Enregistrer**. 
+7. Sous l’onglet **Attributions de rôle** du panneau **myRGRBAC - Contrôle d’accès (IAM)**, cliquez sur **+ Ajouter** puis cliquez sur **Ajouter une attribution de rôle**. Attribuez le rôle Contributeur de machine virtuelle à votre compte d’utilisateur, puis cliquez sur **Enregistrer**. 
 
     | Paramètre | Valeur |
     | -- | -- |

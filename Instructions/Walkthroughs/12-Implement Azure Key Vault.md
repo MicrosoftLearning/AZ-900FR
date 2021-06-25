@@ -1,17 +1,17 @@
 ---
 wts:
-    title: '12 - Implémenter Azure Key Vault (5 min)'
-    module: 'Module 04 : Description des fonctions de sécurité générale et de sécurité réseau'
+    title: '12 - Implémenter Azure Key Vault (5 minutes)'
+    module: 'Module 04 : Description des fonctionnalités de sécurité générale et de sécurité réseau'
 ---
 # 12 - Implémenter Azure Key Vault
 
 Dans cette procédure pas à pas, nous allons créer un coffre de clés Azure (Key vault), puis créer un mot de passe secret dans ce coffre de clés, fournissant un mot de passe stocké en toute sécurité et géré de manière centralisée en vue d’une utilisation dans les applications.
 
-# Tâche 1 : Créer une instance Azure Key Vault (5 min)
+# Tâche 1 : Créer une instance Azure Key Vault (5 minutes)
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
 
-2. Dans le panneau **Tous les services**, recherchez et sélectionnez **Coffres de clés**, puis sélectionnez **+ Ajouter**.
+2. Dans le panneau **Tous les services**, recherchez et sélectionnez **Coffres de clés**, puis sélectionnez **+ Ajouter, + Créer ou + Nouveau**.
 
 3. Configurer le coffre de clés (remplacer **xxxx** dans le nom du coffre de clés par des lettres et des chiffres pour que le nom soit unique au monde). Laissez les valeurs par défaut pour tous les autres éléments.
 
@@ -20,11 +20,11 @@ Dans cette procédure pas à pas, nous allons créer un coffre de clés Azure (K
     | Abonnement | **Utilisez votre abonnement** |
     | Groupe de ressources | **myRGKV** (créer un nouveau) |
     | Nom du coffre de clés | **keyvaulttestxxx** |
-    | Emplacement | **USA Est** |
+    | Localisation | **USA Est** |
     | Niveau tarifaire | **Standard** |
     | | |
 
-4. Cliquez sur **Examiner et créer**, puis cliquez sur **Créer**. 
+4. Cliquez sur **Examiner et créer** puis, après la validation, cliquez sur **Créer**. 
 
 5. Une fois le nouveau coffre de clés configuré, cliquez sur **Accéder à la ressource**. Vous pouvez également localiser votre nouveau coffre de clés en le recherchant. 
 

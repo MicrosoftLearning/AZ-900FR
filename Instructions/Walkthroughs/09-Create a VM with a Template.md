@@ -1,13 +1,13 @@
 ---
 wts:
-    title: '09 - Créer une machine virtuelle avec un modèle (10 min)'
+    title: '09 - Créer une machine virtuelle avec un modèle (10 minutes)'
     module: 'Module 03 : Décrire les solutions principales et les outils de gestion'
 ---
 # 09 - Créer une machine virtuelle avec un modèle
 
 Dans cette procédure pas à pas, nous allons déployer une machine virtuelle avec un modèle de démarrage rapide et examiner ses capacités de surveillance.
 
-# Tâche 1 : Parcourir la galerie et trouver un modèle (10 min)
+# Tâche 1 : Parcourir la galerie et trouver un modèle (10 minutes)
 
 Dans cette tâche, nous allons parcourir la galerie de démarrage rapide Azure et déployer un modèle qui crée une machine virtuelle. 
 
@@ -35,18 +35,18 @@ Dans cette tâche, nous allons parcourir la galerie de démarrage rapide Azure e
     |----|----|
     | Abonnement | **Choisissez votre abonnement**|
     | Groupe de ressources | **myRGTemplate** (créer un nouveau) |
-    | Emplacement | **(États-Unis) USA Est** |
+    | Localisation | **(États-Unis) USA Est** |
     | Nom d’utilisateur administrateur | **azureuser** |
     | Mot de passe administrateur | **Pa$$w0rd1234** |
     | Préfixe d’étiquette DNS | **myvmtemplate*xxxx*** |
     | Version du système d’exploitation Windows | **2019-Datacenter** |
     | | |
     
-    ** Remarque : Il n’y a pas de coûts associés à l’utilisation de ce modèle.
+    **Remarque** : Il n’y a pas de coûts associés à l’utilisation de ce modèle.
 
-9. Cliquez sur **Examiner et créer**.
+8. Cliquez sur **Examiner et créer**.
 
-10. Surveillez votre déploiement. 
+9. Une fois la validation réussie, cliquez sur le bouton **Créer**. Le déploiement de la machine virtuelle peut prendre de cinq à sept minutes. 
 
 # Tâche 2 : Vérifier et contrôler le déploiement de votre machine virtuelle
 

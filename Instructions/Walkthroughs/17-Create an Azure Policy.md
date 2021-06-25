@@ -45,7 +45,7 @@ Au cours de cette tâche, nous allons configurer la stratégie d’emplacements 
 
 Dans cette tâche, nous allons tester la stratégie de localisation autorisée. 
 
-1. Dans le portail Azure, dans le panneau **Tous les services**, recherchez et sélectionnez **Comptes de stockage**, puis cliquez sur **+ Ajouter**.
+1. Dans le portail Azure, dans le panneau **Tous les services**, recherchez et sélectionnez **Comptes de stockage**, puis cliquez sur **+ Ajouter, + Créer ou + Nouveau**.
 
 2. Configurez le compte de stockage (remplacez **xxxx** dans le nom du compte de stockage par des lettres et des chiffres afin que le nom soit unique au monde). Laissez les valeurs par défaut pour tous les autres éléments. 
 
@@ -54,7 +54,7 @@ Dans cette tâche, nous allons tester la stratégie de localisation autorisée.
     | Abonnement | **Utilisez votre abonnement** |
     | Groupe de ressources | **myRGPolicy** (création) |
     | Nom du compte de stockage | **storageaccountxxxx** |
-    | Lieu | **(États-Unis) USA Est** |
+    | Localisation | **(États-Unis) USA Est** |
     | | |
 
 3. Cliquez sur **Vérifier + créer**, puis cliquez sur **Créer**. 
@@ -73,7 +73,7 @@ Nous allons supprimer l’affectation de stratégie pour ne pas risquer d’êtr
 
     **Remarque** : La stratégie Emplacements autorisés peut afficher des ressources non conformes. Dans ce cas, il s’agit de ressources créées avant l’affectation de stratégie.
 
-2. Cliquez sur **Supprimer l’affectation** dans le menu supérieur.
+2. Cliquez sur **Supprimer l’affectation** dans le menu principal.
 
    ![Capture d’écran de l’élément de menu Supprimer l’affectation.](../images/1407.png)
 
