@@ -1,4 +1,4 @@
-﻿---
+---
 title: Instructions hébergées en ligne
 permalink: index.html
 layout: home
