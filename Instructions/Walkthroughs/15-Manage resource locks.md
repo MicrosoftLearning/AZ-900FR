@@ -15,7 +15,7 @@ Au cours de cette tâche, nous allons créer un groupe de ressources pour cet ex
 
 2. Dans la barre de **Recherche** en haut du portail, recherchez **Groupes de ressources**. 
 
-3. Cliquez ensuite sur **+Ajouter +Nouveau +Créer **
+3. Cliquez ensuite sur **+Ajouter +Nouveau +Créer**
 
     | Paramètre | Valeur |
     | -- | -- |
